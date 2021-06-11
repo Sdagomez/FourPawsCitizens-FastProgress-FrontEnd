@@ -1,10 +1,88 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>$Title$</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+
 </head>
 <body>
-$END$
+<div class=" navbar-fixed">
+    <nav class="blue">
+        <div class="nav-wrapper container">
+            <a href="" class="brand-logo">Citizens of 4 Legs<i class="material-icons left">pets</i></a>
+            <ul  class="right">
+                <li>
+                    <a href="#"  class="dropdown-trigger" data-target="id_sing">
+                        Sign in
+                        <i class="material-icons right">arrow_drop_down</i>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+</div>
+
+<ul id="id_sing" class="dropdown-content">
+    <li><a href="#!">Pet owners</a></li>
+    <li class="divider"></li>
+    <li><a href="#!">veterinary</a></li>
+    <li class="divider"></li>
+    <li><a href="#!">Mayor's Office</a></li>
+</ul>
+
+<div class="container section">
+    <div class="row">
+        <div class="col s12">
+            <div class="slider">
+                <ul class="slides">
+                    <li>
+                        <img src="https://blogs.cdc.gov/publichealthmatters/files/2020/05/golden_retiver_cat_cropped.jpg" alt="">
+                        <div class="caption right-align">
+                            <FONT FACE="Brush Script MT" SIZE=25  COLOR= black>Lost your pet?</FONT>
+                            <h3 class=" "></h3>
+                            <FONT FACE="Brush Script MT" SIZE=25  COLOR= black>Report your loss</FONT>
+
+                        </div>
+                    </li>
+                    <li>
+                        <img src="https://pets-central.com/wp-content/uploads/2020/09/petcentral_banner_adoption.jpg" alt="">
+                        <div class="caption center-aling">
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+<!-- Compiled and minified JavaScript -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+       // var elems = document.querySelectorAll('.sidenav');
+        //var instances = M.Sidenav.init(elems);
+    });
+    document.addEventListener('DOMContentLoaded', function() {
+        var elems = document.querySelectorAll('.slider');
+        var instances = M.Slider.init(elems);
+    });
+    document.addEventListener('DOMContentLoaded', function (){
+        M.AutoInit();
+    });
+</script>
+
 </body>
 </html>
