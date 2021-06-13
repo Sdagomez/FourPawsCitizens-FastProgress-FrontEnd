@@ -18,18 +18,25 @@
 <body>
 <div class=" navbar-fixed">
     <nav class="blue">
-        <div class="nav-wrapper container">
-            <a href="" class="brand-logo">Citizens of 4 Legs<i class="material-icons left">pets</i></a>
+        <div class=" nav-wrapper container">
+
+            <a href="" class="brand-logo">Citizens of 4 Legs<i class="material-icons">pets</i></a>
+
+
             <ul  class="right">
                 <li>
-                    <a href="#"  class="dropdown-trigger" data-target="id_sing">
+                    <a href="login.html"  class="dropdown-trigger" >
                         Sign in
-                        <i class="material-icons right">arrow_drop_down</i>
                     </a>
                 </li>
             </ul>
         </div>
     </nav>
+    <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class=" medium material-icons">menu</i></a>
+</div>
+
+<div class=" navbar-fixed">
+    <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class=" medium material-icons">menu</i></a>
 </div>
 
 <ul id="id_sing" class="dropdown-content">
@@ -72,8 +79,8 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
 <script>
     document.addEventListener('DOMContentLoaded', function() {
-       // var elems = document.querySelectorAll('.sidenav');
-        //var instances = M.Sidenav.init(elems);
+        var elems = document.querySelectorAll('.sidenav');
+        var instances = M.Sidenav.init(elems);
     });
     document.addEventListener('DOMContentLoaded', function() {
         var elems = document.querySelectorAll('.slider');
