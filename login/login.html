@@ -23,7 +23,8 @@
         <a href="#" class="brand-logo">Citizens of 4 Legs<i class="material-icons left">pets</i></a>
         <a href="" class="menu-responsive " class="sidenav-trigger"></a>
        <ul class="right">
-         <li><a href="index.html">HOME</a></li>
+         <li><a href="../window-Principal/index.html">HOME
+        </a></li>
 
        </ul>
         <ul id="nav-mobile" class="right hide-on-med-and-down">
@@ -44,6 +45,22 @@
             <div class="form-field">
               <i class="material-icons prefix">account_circle</i>
               <input placeholder="User Name" id="user_name" type="text" class="validate" name="userName">
+
+              <input placeholder="Password" id="password" type="password" class="validate" name="user_name" >
+
+              <!-- Dropdown Trigger -->
+              <a class='dropdown-trigger btn' href='#' data-target='dropdown1'>Drop Me!</a>
+              
+              <!-- Dropdown Structure -->
+              <ul id='dropdown1' class='dropdown-content'>
+                <li><a href="#!">one</a></li>
+                <li><a href="#!">two</a></li>
+                <li class="divider" tabindex="-1"></li>
+                <li><a href="#!">three</a></li>
+                <li><a href="#!"><i class="material-icons">view_module</i>four</a></li>
+                <li><a href="#!"><i class="material-icons">cloud</i>five</a></li>
+              </ul>
+
             </div><br>
             <button class="btn-large waves-effect waves-light blue" style="width: 100%" type="submit" value="Login" name="action">Submit
               <i class="material-icons right">send</i>
@@ -68,6 +85,8 @@
     var elems = document.querySelectorAll('.slider');
     var instances = M.Slider.init(elems);
   });
+
+   $('.dropdown-trigger').dropdown();
 </script>
 
 </body>
