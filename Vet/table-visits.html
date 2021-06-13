@@ -35,31 +35,61 @@
     </div>
     <div class="container">
         <h1 class="blue-text"><i class="material-icons left">pets</i>
-            Pets Owner
+          Visits
         </h1>
     </div>
     <div class="container">
         <form action="login-with-cookies" method="post">
-            <class class="row">
-                <table id="table-Pet" class="table table-fluid">
-                    <thead>
-                        <tr>
-                            <th scope="row">Update</th>
-                            <th scope="row">ID</th>
-                            <th scope="row">microchip</th>
-                            <th scope="row">Name</th>
-                            <th scope="row">Species</th>
-                            <th scope="row">Breed</th>
-                            <th scope="row">Size</th>
-                            <th scope="row">Sex</th>
-                            <th scope="row">Image</th>
-                            <th scope="row">Cases</th>
-                            <th scope="row">Cases and Visits</th>
-                        </tr>
-                    </thead>
-                </table>
-            </class>
+            <div class="row">
+
+
+                <div class="row">
+            
+                    <div class="input-field col s6">
+                        <class class="material-icons prefix">pets</class>
+                        <input placeholder="Name animal" id="N-animal" type="text" class="validate">
+                        <label for="microchip" class="active">Name animal</label>
+                    </div>
+
+
+                    <div class="input-field col s6">
+                        <i class="material-icons prefix">pets</i>
+                        <label for="First-date"> First date</label><br>
+                        <input type="Date" name="caseDate" size="30" id="second-date" required>
+                    </div>
+
+                    <div class="input-field col s6">
+                        <i class="material-icons prefix">pets</i>
+                        <label for="second-date"> Second date</label><br>
+                        <input type="Date" name="caseDate" size="30" id="second-date" required>
+                    </div>
+
+                    <div class="input-field col s6"></div>
+                    <div class="input-field col s6"></div>
+                    <div class="input-field col s6"></div>
+                    <div class="input-field col s6"></div>
+
+
+
+                    <button class="blue waves-light btn" type="submit" id="CreateAnimal" name="action">Filter
+                        <i class="material-icons right">send</i>
+                    </button>
+                </div>
+
+            </div>
         </form>
+
+        <table id="table visits" class="table table-fluid">
+            <thead>
+                <tr>
+                    <th scope="row">ID vet</th>
+                    <th scope="row">ID animal</th>
+                    <th scope="row">Date</th>
+                    <th scope="row">Type visit</th>
+                    <th scope="row">Description</th>
+                </tr>
+            </thead>
+        </table>
 
 
     </div>

@@ -35,30 +35,56 @@
     </div>
     <div class="container">
         <h1 class="blue-text"><i class="material-icons left">pets</i>
-            Pets Owner
+            Create  Visit
         </h1>
     </div>
     <div class="container">
         <form action="login-with-cookies" method="post">
-            <class class="row">
-                <table id="table-Pet" class="table table-fluid">
-                    <thead>
-                        <tr>
-                            <th scope="row">Update</th>
-                            <th scope="row">ID</th>
-                            <th scope="row">microchip</th>
-                            <th scope="row">Name</th>
-                            <th scope="row">Species</th>
-                            <th scope="row">Breed</th>
-                            <th scope="row">Size</th>
-                            <th scope="row">Sex</th>
-                            <th scope="row">Image</th>
-                            <th scope="row">Cases</th>
-                            <th scope="row">Cases and Visits</th>
-                        </tr>
-                    </thead>
-                </table>
-            </class>
+            <div class="row">
+
+
+                <div class="row">
+                    <div class="input-field col s6">
+                        <class class="material-icons prefix">pets</class>
+                        <input placeholder="ID" id="microchip" type="text" class="validate">
+                        <label for="microchip" class="active">Microchip</label>
+                    </div>
+
+                    <div class="input-field col s6">
+                        <i class="material-icons prefix">pets</i>
+                        <input placeholder="Description visit" id="descriptio-visit" type="text" class="validate">
+                        <label for="microchip" class="active">Description</label> </label>
+                    </div>
+
+
+
+                    <div class="input-field col s6">
+                        <i class="material-icons prefix">pets</i>
+                        <select name="type animal" id="type-Animal" required>
+                            <option value="" disabled selected>Select  type </option>
+                            <option value="2">Esterilización</option>
+                            <option value="3">Implantación de microchip</option>
+                            <option value="4">Vacunación</option>
+                            <option value="5">Desparasitación</option>
+                            <option value="6">Urgencia</option>
+                            <option value="7">Control</option>
+                        </select>
+                        <label>Type visit</label>
+                    </div>
+
+                    <div class="input-field col s6">
+                        <i class="material-icons prefix">pets</i>
+                        <label for="caseDate"> Case date</label><br>
+                        <input type="Date" name="caseDate" size="30" id="caseDate" required>
+                    </div>
+
+
+                    <button class="blue waves-light btn" type="submit" id="CreateAnimal" name="action">Submit
+                        <i class="material-icons right">send</i>
+                    </button>
+                </div>
+
+            </div>
         </form>
 
 
