@@ -59,7 +59,51 @@
                     <input placeholder="Pet Name" id="Pet_name" type="text" class="validate">
                     <label for="microchip" class="active">Pet Name</label>
                 </div>
-                <a class=" blue waves-light btn"><i class="material-icons left">cloud</i>SAVE</a>
+
+        
+                <div class="input-field col s6">
+                    <i class="material-icons prefix">pets</i>
+                    <select name="typeAnimal" id="typeAnimal" required> 
+                        <option value="" disabled selected>select type of animal</option>
+                        <option value="1">Cat</option>
+                        <option value="2">Dog</option>
+                      
+                    </select>
+                    <label>Type of animal</label>
+                </div>
+
+                <div class="input-field col s6">
+                    <i class="material-icons prefix">pets</i>
+                    <select name="GenderAnimal" id="GenderAnimal" required>
+                        <option value="" disabled selected>select gender</option>
+                        <option value="1">Macho</option>
+                        <option value="2">Hembra</option>
+                
+                    </select>
+                    <label>Gender</label>
+                </div>
+               
+                <div class="input-field col s6">
+                    <i class="material-icons prefix">pets</i>
+                    <select name="sizeAnimal" id="sizeAnimal" required>
+                        <option value="" disabled selected>select size </option>
+                        <option value="1">Big</option>
+                        <option value="2">Medium</option>
+                        <option value="3">Small</option>
+                
+                    </select>
+                    <label>Size</label>
+                </div>
+
+                <div class="input-field col s6">
+                    <i class="material-icons prefix">pets</i>
+                    <input placeholder="Breed of animal" id="breedAnimal" type="text" class="validate">
+                    <label for="microchip" class="active">Breed </label>
+                </div>
+            
+                <button class="blue waves-light btn" type="submit"   id="CreateAnimal" name="action">Submit
+                    <i class="material-icons right">send</i>
+                </button>
             </div>
 
         </div></form>
@@ -82,6 +126,11 @@
     document.addEventListener('DOMContentLoaded', function (){
         M.AutoInit();
     });
+     document.addEventListener('DOMContentLoaded', function () {
+            var elems = document.querySelectorAll('select');
+            var instances = M.FormSelect.init(elems, options);
+        });
+
 </script>
 
 
