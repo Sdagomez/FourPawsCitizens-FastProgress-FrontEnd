@@ -36,7 +36,7 @@
 <div class=" navbar-fixed">
     <nav class="blue lighten-2 nav-extended">
         <div class=" nav-wrapper container">
-            <ul>
+            <ul class="left hide-on-med-and-down">
             <li><a class="dropdown-trigger" href="#" data-target="OFFICIAL_1">OFFICIAL<i class="material-icons right">arrow_drop_down</i></a></li>
             <li><a class="dropdown-trigger" href="#" data-target="PET">PET OWNER<i class="material-icons right">arrow_drop_down</i></a></li>
             <li><a class="dropdown-trigger" href="#" data-target="VET">VET<i class="material-icons right">arrow_drop_down</i></a></li>
@@ -44,7 +44,7 @@
         </div>
     </nav>
 </div>
-<ul id="id_sing" class="dropdown-content">
+<ul id="dropdown1" class="dropdown-content">
     <li><a href="#!">Pet owners</a></li>
     <li class="divider"></li>
     <li><a href="#!">veterinary</a></li>
@@ -112,12 +112,16 @@
         M.AutoInit();
     });
     document.addEventListener('DOMContentLoaded', function() {
-        var elems = document.querySelectorAll('.sidenav');
+       var elems = document.querySelectorAll('.sidenav');
         var instances = M.Sidenav.init(elems);
+
     });
     document.addEventListener('DOMContentLoaded', function() {
         var elems = document.querySelectorAll('.slider');
         var instances = M.Slider.init(elems);
+    });
+    document.addEventListener('DOMContentLoaded', function (){
+        M.AutoInit();
     });
 
 </script>
