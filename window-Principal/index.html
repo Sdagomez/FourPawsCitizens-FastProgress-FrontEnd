@@ -17,7 +17,7 @@
 </head>
 <body>
 <div class=" navbar-fixed">
-    <nav class="blue">
+    <nav class="blue nav-extended">
         <div class=" nav-wrapper container">
 
             <a href="" class="brand-logo">Citizens of 4 Legs<i class="material-icons">pets</i></a>
@@ -32,19 +32,49 @@
             </ul>
         </div>
     </nav>
-    <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class=" medium material-icons">menu</i></a>
 </div>
-
 <div class=" navbar-fixed">
-    <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class=" medium material-icons">menu</i></a>
+    <nav class="blue lighten-2 nav-extended">
+        <div class=" nav-wrapper container">
+            <ul>
+            <li><a class="dropdown-trigger" href="#" data-target="OFFICIAL_1">OFFICIAL<i class="material-icons right">arrow_drop_down</i></a></li>
+            <li><a class="dropdown-trigger" href="#" data-target="PET">PET OWNER<i class="material-icons right">arrow_drop_down</i></a></li>
+            <li><a class="dropdown-trigger" href="#" data-target="VET">VET<i class="material-icons right">arrow_drop_down</i></a></li>
+            </ul>
+        </div>
+    </nav>
 </div>
-
 <ul id="id_sing" class="dropdown-content">
     <li><a href="#!">Pet owners</a></li>
     <li class="divider"></li>
     <li><a href="#!">veterinary</a></li>
     <li class="divider"></li>
     <li><a href="#!">Mayor's Office</a></li>
+</ul>
+<ul id="OFFICIAL_1" class="dropdown-content">
+    <li><a href="../Official/table-filter.html">Table Filter</a></li>
+    <li class="divider"></li>
+    <li><a href="../Official/table-owner.html">Table Owner</a></li>
+    <li class="divider"></li>
+    <li><a href="../Official/table-pets.html">Table Pets</a></li>
+</ul>
+<ul id="PET" class="dropdown-content">
+    <li><a href="../pet_owner/Create-case.html">Create Case</a></li>
+    <li class="divider"></li>
+    <li><a href="../pet_owner/pet_owner.html">Pet Owner</a></li>
+    <li class="divider"></li>
+    <li><a href="../pet_owner/Table-pet.html">Table Pet</a></li>
+    <li class="divider"></li>
+    <li><a href="../pet_owner/Update-owner.html">Update Owner</a></li>
+    <li class="divider"></li>
+    <li><a href="../pet_owner/update-pet.html">Update Pet</a></li>
+</ul>
+<ul id="VET" class="dropdown-content">
+    <li><a href="../Vet/create-visit.html">Create Visit</a></li>
+    <li class="divider"></li>
+    <li><a href="../Vet/table-visits.html">Table Visits</a></li>
+    <li class="divider"></li>
+    <li><a href="../Vet/update-vet.html">Update vet</a></li>
 </ul>
 
 <div class="container section">
@@ -78,17 +108,18 @@
 <!-- Compiled and minified JavaScript -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
 <script>
+    document.addEventListener('DOMContentLoaded', function (){
+        M.AutoInit();
+    });
     document.addEventListener('DOMContentLoaded', function() {
-        var elems = document.querySelectorAll('.sidenav');
-        var instances = M.Sidenav.init(elems);
+       // var elems = document.querySelectorAll('.sidenav');
+        //var instances = M.Sidenav.init(elems);
     });
     document.addEventListener('DOMContentLoaded', function() {
         var elems = document.querySelectorAll('.slider');
         var instances = M.Slider.init(elems);
     });
-    document.addEventListener('DOMContentLoaded', function (){
-        M.AutoInit();
-    });
+
 </script>
 
 </body>
