@@ -17,7 +17,7 @@
 </head>
 <body>
 <div class=" navbar-fixed">
-    <nav class="blue">
+    <nav class="blue nav-extended">
         <div class=" nav-wrapper container">
 
             <a href="" class="brand-logo">Citizens of 4 Legs<i class="material-icons">pets</i></a>
@@ -25,18 +25,24 @@
 
             <ul  class="right">
                 <li>
-                    <a href="../login/login.html"  class="dropdown-trigger" >
+                    <a href="../login/login.html" >
                         Sign in
                     </a>
                 </li>
             </ul>
         </div>
     </nav>
-    <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class=" medium material-icons">menu</i></a>
 </div>
-
 <div class=" navbar-fixed">
-    <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class=" medium material-icons">menu</i></a>
+    <nav class="blue lighten-2 nav-extended">
+        <div class=" nav-wrapper container">
+            <ul class="left hide-on-med-and-down">
+            <li><a class="dropdown-trigger" href="#" data-target="OFFICIAL_1">OFFICIAL<i class="material-icons right">arrow_drop_down</i></a></li>
+            <li><a class="dropdown-trigger" href="#" data-target="PET">PET OWNER<i class="material-icons right">arrow_drop_down</i></a></li>
+            <li><a class="dropdown-trigger" href="#" data-target="VET">VET<i class="material-icons right">arrow_drop_down</i></a></li>
+            </ul>
+        </div>
+    </nav>
 </div>
 
 <ul id="id_sing" class="dropdown-content">
@@ -85,9 +91,13 @@
 <!-- Compiled and minified JavaScript -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
 <script>
+    document.addEventListener('DOMContentLoaded', function (){
+        M.AutoInit();
+    });
     document.addEventListener('DOMContentLoaded', function() {
-        var elems = document.querySelectorAll('.sidenav');
+       var elems = document.querySelectorAll('.sidenav');
         var instances = M.Sidenav.init(elems);
+
     });
     document.addEventListener('DOMContentLoaded', function() {
         var elems = document.querySelectorAll('.slider');
@@ -96,6 +106,7 @@
     document.addEventListener('DOMContentLoaded', function (){
         M.AutoInit();
     });
+
 </script>
 
 </body>
