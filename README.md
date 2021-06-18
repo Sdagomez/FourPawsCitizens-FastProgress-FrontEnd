@@ -12,6 +12,9 @@ Stack:
 Backend
 -https://github.com/juanpasb/FourPawsCitizens-FastProgress-Backend.git
 
+Video
+-https://youtu.be/kRPB-WWC8MA
+
 Descripcion 
 
 Es una pagina web que permite a usuarios con una mascota registar su mascota y subir su informacion como sexo, tamaño, raza entre otras cosas. una de las principales caracteristicas es que permite registrar la perdida y fallecimineto de sus mascota, este tipo de casos la pagina te ayudara.
